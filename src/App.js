@@ -19,18 +19,24 @@ import './App.css';
 // import data
 import VacationsData from './VacationsData';
 import Card from './Card';
+import Header from './Header';
 
-function App() {
+const App = () => {
   const data = VacationsData.map((item) => {
-    <Card 
-      key={item.id}
-      item={item}
-    />
+    return (
+      <Card 
+        key={item.id}
+        item={item}
+      />
+    )
   });
 
   return (
     <div className="app-wrap">
-      {data}
+      <Header />
+      <div className="data-wrap">
+        {data}
+      </div>
     </div>
   );
 }
