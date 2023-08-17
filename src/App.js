@@ -18,8 +18,8 @@ import './App.css';
 
 // import data
 import VacationsData from './VacationsData';
-import Card from './Card';
-import Header from './Header';
+import Card from "./Card";
+import Header from "./Header";
 
 const App = () => {
   const data = VacationsData.map((item) => {
@@ -33,9 +33,11 @@ const App = () => {
 
   return (
     <div className="app-wrap">
-      <Header />
-      <div className="data-wrap">
-        {data}
+      <div className="app">
+        <Header />
+        <div className="data-wrap">
+          {data}
+        </div>
       </div>
     </div>
   );
