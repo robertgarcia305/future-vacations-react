@@ -1,3 +1,11 @@
+# Concepts applied
+working with local data added it to the site
+build different components
+conditionals 
+map through array
+css styling
+using props
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
