@@ -20,43 +20,85 @@ code {
   box-sizing: border-box;
 }
 
-.card-wrap {
-  border: 1px solid red;
+/* main component */
+.app-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(158,248,201);
+  background: linear-gradient(135deg, rgba(158,248,201,1) 0%, rgba(36,191,254,1) 50%, rgba(82,55,255,1) 100%);
 }
 
-.card-img-wrap {
-  height: 100px;
-  width: 100px;
-  border: 1px solid blue;
+.app {
+  width: 1000px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+/* cards */
+.card-wrap {
+  display: flex;
+  padding: 3px;
+  border-top: 1px solid #f54f51;
 }
 
 .google-maps {
   color: grey;
+  margin-left: 10px;
 }
 
 .location-wrap {
   display: flex;
 }
 
-/* for the location icon */
-.location-wrap p {
-  fill: #f54f51;
-  color: #f54f51;
-  margin-right: 20px;
+
+.card-img-wrap img {
+  width: 200px;
+  border-radius: 20px;
 }
 
-/* <div class="card-wrap">
-  <div class="card-img-wrap">
-    <p>img</p>
-  </div>
-  <section>
-    <div class="location-wrap">
-      <p>icon</p>
-      <p class="location">United Kingdom</p>
-      <p><a href={props.item.googleMapsLink} class="google-maps">Check On Google Maps</a></p>
-    </div>
-    <h3>This is the title</h3>
-    <p class="date">12 Jan, 2023 - 20 Jan, 2024</p>
-    <p>This is the description of the prop.item</p>
-  </section>
-</div> */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.date {
+  font-size: 14px;
+  color: darkgrey;
+}
+
+/* header  */
+.header-wrap {
+  background-color: #f54f51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.header-wrap div {
+  margin: 0px 10px;
+}
+
+.img-wrap img {
+  width: 40px;
+}
+
+/* for the location icon */
+.location-wrap img {
+  fill: #f54f51;
+  width: 20px;
+}
+
+@media (max-width: 1000px) {
+  .app {
+    width: 100%;
+  }
+}
